@@ -11,7 +11,7 @@ if (!is_null($_POST)) {
     $qr_code_pattern = $_POST['qr_code_pattern'];
     $foreground_color = $_POST['foreground_color'];
     $background_color = $_POST['background_color'];
-    $marker_left_inner_color = $_POST['marker_left_inner_color']s;
+    $marker_left_inner_color = $_POST['marker_left_inner_color'];
     $marker_left_outer_color = $_POST['marker_left_outer_color'];
     $marker_right_inner_color = $_POST['marker_right_inner_color'];
     $marker_right_outer_color = $_POST['marker_right_outer_color'];
