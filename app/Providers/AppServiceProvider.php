@@ -5,10 +5,22 @@ namespace App\Providers;
 use OpenAdmin\Admin\Config\Config;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
-    public function boot()
+    /**
+     * Register any application services.
+     */
+    public function register(): void
+    {
+        //
+    }
+
+    /**
+     * Bootstrap any application services.
+     */
+    public function boot(): void
     {
         $table = config('admin.extensions.config.table', 'admin_config');
         if (Schema::hasTable($table)) {
@@ -16,3 +28,5 @@ class AppServiceProvider extends ServiceProvider
         }
     }
 }
+        Schema::defaultStringLength(191);
+    }}
