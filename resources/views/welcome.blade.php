@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+
     <div class="welcome-container flex flex-col items-center justify-center h-screen md:mt-[-100px]">
         <div class="welcome-text text-center mt-8 md:mt-16 mb-8 text-white">
             <h1 class="text-2xl md:text-8xl font-bold">QR Code</h1>
             <div id="typed-strings">
-                <p id="typed-text" class="text-lg md:text-2xl">Begin met uw <strong>gepersonaliseerde</strong> QR code te maken!</p>
+                <p id="typed-text" class="text-lg md:text-2xl" style="font-size:30px;">Begin met uw <strong>gepersonaliseerde</strong> QR code te maken!</p>
             </div>
          
 <span id="typed"></span>
