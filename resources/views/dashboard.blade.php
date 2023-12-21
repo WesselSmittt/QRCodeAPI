@@ -7,7 +7,7 @@
                 <p id="typed-text" class="text-lg md:text-2xl" style="font-size:30px;">Begin met uw <strong>gepersonaliseerde</strong> QR code te maken!</p>
             </div>
          
-<span class="md:text-3xl font-semibold text-6xl text-gray-800 dark:text-gray-200 leading-tight" id="typed"></span>
+<span class="md:text-2xl text-6xl text-gray-800 dark:text-gray-200 leading-tight" id="typed"></span>
     </x-slot>
     @section('content')
     <div class="py-12">
