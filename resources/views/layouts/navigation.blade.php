@@ -19,6 +19,10 @@
                         {{ __('Mijn QR Codes') }}
                 </x-nav-link>
                     
+
+                    <x-nav-link :href="route('users.index')" :active="request()->routeIs('dashboard')">
+                        {{ __('Users') }}
+                    </x-nav-link>
                 </div>
             </div>
 
