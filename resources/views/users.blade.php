@@ -14,7 +14,7 @@
                 <p class="font-bold">{{ $user->name }}</p>
                 <p>{{ $user->email }}</p>
                 <div class="flex items-center justify-end">
-                    <button class="toggleButton px-4 py-2 rounded-full text-white font-bold focus:outline-none bg-red-500">
+                    <button class="toggleButton px-4 py-2 rounded-full text-white font-bold focus:outline-none bg-red-500" data-state="false">
                         User
                     </button>
                 </div>
@@ -26,10 +26,11 @@
         const toggleButtons = document.querySelectorAll(".toggleButton");
 
         toggleButtons.forEach(button => {
-            let isUser = true;
-
             button.addEventListener("click", function() {
-                if (isUser) {
+                const currentState = this.dataset.state === "true"; 
+                const nextState = !currentState;
+
+                if (nextState) {
                     this.textContent = "Admin";
                     this.classList.remove("bg-red-500");
                     this.classList.add("bg-green-500");
@@ -39,7 +40,7 @@
                     this.classList.add("bg-red-500");
                 }
 
-                isUser = !isUser;
+                this.dataset.state = nextState.toString(); 
             });
         });
     </script>
