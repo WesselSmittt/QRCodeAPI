@@ -9,7 +9,7 @@
                 <p id="typed-text" class="text-lg md:text-2xl" style="font-size:30px;">Begin met uw <strong>gepersonaliseerde</strong> QR code te maken!</p>
             </div>
          
-<span id="typed"></span>
+<span class="md:text-4xl" id="typed"></span>
         </div>
 
         <div class="welcome-buttons space-y-4 md:space-y-0 md:space-x-4">
